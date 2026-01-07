@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
+import frontendLogo from '../../../frontend/src/assets/logo.PNG'
 import { DoctorContext } from '../context/DoctorContext'
 import { AdminContext } from '../context/AdminContext'
 import { useNavigate, useLocation } from 'react-router-dom'
@@ -34,7 +35,7 @@ const Navbar = () => {
         <img
           onClick={() => navigate('/')}
           className='w-36 sm:w-40 cursor-pointer'
-          src={assets.admin_logo}
+          src={frontendLogo}
           alt="Logo"
         />
 
